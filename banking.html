@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind cnd link -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 class="text-center text-3xl mt-16 ">Let's get some <span class="text-blue-400 ">money</span></h1>
+
+    </header>
+    <main>
+        <!-- over all view part -->
+        <section >
+            <div class="grid grid-cols-3  text-white mt-8 mx-auto">
+                <div class="bg-blue-500 w-3/4 m-auto p-8 text-center border border-gray-800 gap-4 rounded-2xl">
+                    <h1 class="text-2xl ">Deposit</h1>
+                    <h1 class="text-4xl">$<span id="deposhow">00</span></h1>
+                </div>
+                <div class="bg-red-500 w-3/4 m-auto p-8 text-center border border-gray-800 gap-4 rounded-2xl">
+                    <h1 class="text-2xl ">Withdraw</h1>
+                    <h1 class="text-4xl">$<span id="withdrawshow">00</span></h1>
+                </div>
+                <div class="bg-green-500 w-3/4 m-auto p-8 text-center border border-gray-800 gap-4 rounded-2xl">
+                    <h1 class="text-2xl ">Balance</h1>
+                    <h1 class="text-4xl">$<span id="balance">00</span></h1>
+                </div>
+                
+
+            </div>
+        </section>
+
+        <!-- deposit and Withdraw part -->
+        <section class="w-3/4 m-auto mt-12">
+            <div class="grid grid-cols-2 gap-4 "> 
+                <div class="bg-yellow-300  p-8 border rounded-3xl ">
+                    <h1 class="text-2xl ">Deposit Amount</h1>
+                    <input class="block w-3/4 rounded p-3" type="text" name="" placeholder="$ enter your amount" id="depoField">
+                    <button id="depositButton" class="bg-green-500 px-10 py-3 rounded-3xl mt-3">submit</button>
+                </div>
+                <div class="bg-yellow-300  p-8 border rounded-3xl ">
+                    <h1 class="text-2xl ">Withdraw Amount</h1>
+                    <input class="block w-3/4 rounded p-3" type="text" name="" placeholder="$ enter your amount" id="witdrwField">
+                    <button id="withdrawbutton" class="bg-red-500 px-10 py-3 rounded-3xl mt-3">submit</button>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+<script src="depoandwithdeaw.js"></script>  
+</body>
+</html>
